@@ -1,26 +1,97 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --color-page-background: #0d1419;
+    --color-surface-dark: #07121c;
+    --color-surface-hover: #17242c;
+    --color-text-primary: #edf6ff;
+    --color-text-secondary: #a9bac6;
+    --color-text-muted: #afbec8;
+    --color-text-light: #f3f3f3;
+    --color-text-white: #fff;
+    --color-text-alice: aliceblue;
+    --color-accent: #a5e8c3;
+    --color-accent-soft: #c9eadb;
+    --color-accent-focus: #9fe4cc;
+    --color-accent-pale: #bce8d4;
+    --color-text-social: #dcebf4;
+    --color-button-text: #eaf4fd;
+    --color-button-dark: #08141e;
+    --color-button-hover: #dff7ff;
+    --color-skill-text: #c5d4dc;
+    --color-portrait: #eaf0ed;
+    --color-about-primary: #eaf3fa;
+    --color-about-heading: #e8f1f8;
+    --color-nav-muted: #ccc9c9;
+    --color-border-nav: #4b5a63;
+    --color-transparent: transparent;
+    --color-black: #000;
+    --color-hero-glow-one: rgba(42, 130, 135, .25);
+    --color-hero-glow-two: rgba(18, 96, 91, .18);
+    --color-dot-hero: rgba(211, 236, 243, .22);
+    --color-border-soft: rgba(191, 213, 224, .24);
+    --color-border-medium: rgba(191, 213, 224, .3);
+    --color-border-strong: rgba(191, 213, 224, .35);
+    --color-accent-tint: rgba(165, 232, 195, .12);
+    --color-button-hover-tint: rgba(223, 247, 255, .1);
+    --color-accent-glow: rgba(165, 232, 195, .9);
+    --color-skill-border: rgba(180, 209, 220, .16);
+    --color-skill-background: rgba(130, 173, 186, .06);
+    --color-ring-border: rgba(188, 222, 228, .22);
+    --color-portrait-border: rgba(222, 239, 244, .11);
+    --color-white-half: rgba(255, 255, 255, .5);
+    --color-shadow-strong: rgba(0, 0, 0, .32);
+    --color-about-glow-one: rgba(47, 127, 121, .13);
+    --color-about-glow-two: rgba(33, 103, 132, .12);
+    --color-dot-about: rgba(196, 225, 235, .3);
+    --color-section-border: rgba(185, 211, 221, .14);
+    --color-section-start: rgba(19, 36, 46, .94);
+    --color-section-end: rgba(13, 29, 38, .91);
+    --color-white-subtle: rgba(255, 255, 255, .025);
+    --color-shadow-light: rgba(0, 0, 0, .13);
+    --color-section-glow: rgba(126, 220, 191, .1);
+    --color-accent-border: rgba(165, 232, 195, .36);
+    --color-white-hover: rgba(255, 255, 255, .05);
+    --color-shadow-hover: rgba(0, 0, 0, .24);
+    --color-nav-shadow: rgba(0, 0, 0, .2);
+    --color-nav-focus: rgba(243, 243, 243, .45);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+    scroll-behavior: smooth;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    width: 100%;
+    background: var(--color-surface-dark);
+
+
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+
+}
+Link{
+    text-decoration: none;
+    color: inherit;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+
 }

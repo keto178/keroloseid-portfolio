@@ -1,0 +1,31 @@
+.home-projects {
+    width: 90%;
+    margin: 0 auto;
+    padding: 78px 0;
+    color: var(--color-text-primary);
+    scroll-margin-top: 24px;
+}
+
+.home-projects__header { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 46px; }
+.home-projects__header p { margin: 0 0 10px; color: var(--color-accent); font-size: .78rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; }
+.home-projects__header h2 { margin: 0; font-size: clamp(2.6rem, 4vw, 4rem); font-weight: 500; letter-spacing: -.065em; line-height: .95; }
+.home-projects__all { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 3px; color: var(--color-text-secondary); font-size: 1rem; }
+.home-projects__all span { font-size: 1.35rem; line-height: 1; }
+.home-projects__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 34px; }
+.home-project-card { overflow: hidden; border: 1px solid rgba(191, 213, 224, .14); border-radius: 26px; background: #101c24; }
+.home-project-card__image { width: 100%; height: 205px; display: block; object-fit: cover; object-position: center; opacity: .62; filter: brightness(.78) saturate(.78); }
+.home-project-card__content { padding: 22px; }
+.home-project-card__content h3 { margin: 0 0 6px; color: var(--color-accent); font-size: .98rem; font-weight: 650; letter-spacing: -.035em; line-height: 1.3; }
+.home-project-card__content p { display: -webkit-box; overflow: hidden; margin: 0 0 16px; color: var(--color-text-secondary); font-size: .84rem; font-weight: 500; line-height: 1.5; -webkit-box-orient: vertical; -webkit-line-clamp: 4; }
+.home-project-card__tech { display: flex; flex-wrap: wrap; gap: 10px; }
+.home-project-card__tech span { display: inline-flex; align-items: center; min-height: 32px; padding: 0 12px; border: 1px solid rgba(191, 213, 224, .16); border-radius: 999px; color: rgba(237, 246, 255, .9); font-size: .68rem; font-weight: 600; letter-spacing: .06em; }
+
+@media (max-width: 1080px) { .home-projects__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) {
+    .home-projects { width: min(100% - 32px, 1540px); padding: 54px 0; }
+    .home-projects__header { align-items: flex-start; margin-bottom: 30px; }
+    .home-projects__all { font-size: .86rem; }
+    .home-projects__grid { grid-template-columns: 1fr; gap: 20px; }
+    .home-project-card__image { height: 205px; }
+    .home-project-card__content { padding: 24px 22px; }
+}
