@@ -11,7 +11,7 @@ export default function Blog() {
         <div className="item3">
             {Blogs.map((Blog,index)=>(
                 <div className="blog" key={`${Blog.title},${index}`}>
-                <Link href=""><h3>{Blog.title}</h3></Link>
+                <h3>{Blog.title}</h3>
                 <p>{Blog.description}</p>
                 <div className="link-p" aria-label="Article tags">
                     {Blog.Tagsp.split("•").map((tag) => (

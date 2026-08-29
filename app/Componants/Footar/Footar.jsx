@@ -27,7 +27,7 @@ export default function Footar() {
                     <a href="https://www.linkedin.com/in/kerolos-eid-70aa08388" target="_blank" rel="noreferrer">LinkedIn</a>
                     <a href="https://github.com/keto178" target="_blank" rel="noreferrer">GitHub</a>
                     <a href="https://wa.me/201270233635" target="_blank" rel="noreferrer">WhatsApp</a>
-                    <a href="mailto:kerolos.eid159@email.com">Email</a>
+                    <a href="mailto:kerolos.eid159@gmail.com">Email</a>
                 </nav>
             </div>
         </div>

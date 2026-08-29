@@ -18,7 +18,7 @@ export default function Navbar() {
                     <Link href="/Contact">Contact</Link>
                 </div>
                 <div className="Btn">
-                    <Link href="/cv kerolos-eid-159.pdf" className="btn-cv" >
+                    <Link href="/cv-kerolos-eid-159.pdf" className="btn-cv" >
                     <span>Download CV</span>
                     <span className="btn-cv__icon" aria-hidden="true">↓</span>
                     </Link>

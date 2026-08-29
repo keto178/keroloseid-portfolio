@@ -6,7 +6,7 @@ const skills = ["React.js", "Next.js", "TypeScript", "JavaScript",'Redux Toolkit
 const socialLinks = {
   github: "https://github.com/keto178",
   linkedin: "https://www.linkedin.com/in/kerolos-eid-70aa08388",
-  email: "mailto:kerolos.eid159@email.com",
+  email: "mailto:kerolos.eid159@gmail.com",
 };
 
 export default function Hero() {
