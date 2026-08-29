@@ -110,6 +110,9 @@
 }
 
 .hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
     margin-top: 2rem;
 }
 
@@ -294,10 +297,11 @@
     }
 
     .hero__actions {
+        gap: .85rem;
         margin-top: 1.55rem;
     }
 
-    .hero__actions button {
+    .hero__actions .link {
         width: 100%;
     }
 

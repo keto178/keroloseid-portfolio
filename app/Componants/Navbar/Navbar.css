@@ -107,6 +107,16 @@
         width: 90%;
         padding: 16px;
         flex-wrap: wrap;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .continer .name {
+        flex: 1 1 auto;
+    }
+
+    .Btn {
+        margin-left: auto;
     }
 
     .nav-link {
@@ -120,9 +130,11 @@
 
     .site-navbar .name h3 {
         padding: 0;
+        font-size: 1.45rem;
     }
 
     .btn-cv {
+        position: static;
         min-width: auto;
         padding: 11px 15px;
     }
