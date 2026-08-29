@@ -4,7 +4,7 @@ import Footar from "./Componants/Footar/Footar";
 import SmoothScroll from "./Componants/SmoothScroll";
 
 export const metadata = {
-  metadataBase: new URL(""), // غيره للدومين بتاعك
+  metadataBase: new URL("https://keroloseid-portfolio.vercel.app"), // غيره للدومين بتاعك
   title: {
     default: "Kerolos Eid | Front-End Developer - React & Next.js",
     template: "%s | Kerolos Eid",
@@ -16,7 +16,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "",
+    url: "https://keroloseid-portfolio.vercel.app",
     title: "Kerolos Eid | Front-End Developer",
     description: "I build fast, responsive web apps with React & Next.js",
     siteName: "Kerolos Eid Portfolio",
