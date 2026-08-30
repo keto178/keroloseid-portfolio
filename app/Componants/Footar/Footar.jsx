@@ -19,7 +19,6 @@ export default function Footar() {
                     <Link href="/">Home</Link>
                     <Link href="/About">About</Link>
                     <Link href="/Projects">Projects</Link>
-                    <Link href="/Services">Services</Link>
                     <Link href="/Blog">Blog</Link>
                     <Link href="/Contact">Contact</Link>
                 </nav>
