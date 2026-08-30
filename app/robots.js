@@ -1,9 +1,11 @@
 export default function robots() {
+    const baseUrl = "https://keroloseid-portfolio.vercel.app";
+
     return {
     rules: {
-        userAgent: '*',
-        allow: '/',
+        userAgent: "*",
+        allow: "/",
     },
-    sitemap: 'https://your-domain.vercel.app/sitemap.xml',
-    }
+    sitemap: `${baseUrl}/sitemap.xml`,
+    };
 }

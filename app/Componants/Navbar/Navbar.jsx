@@ -11,16 +11,14 @@ export default function Navbar() {
                 <div className="nav-link">
                     <Link href="/">Home</Link>
                     <Link href="/About">About</Link>
-                    {/* <Link href="/Experience">Experience</Link> */}
                     <Link href="/Projects">Projects</Link>
-                    <Link href="/Services">Services</Link>
                     <Link href="/Blog">Blog</Link>
                     <Link href="/Contact">Contact</Link>
                 </div>
                 <div className="Btn">
-                    <Link href="/cv-kerolos-eid-159.pdf" className="btn-cv" >
-                    <span>Download CV</span>
-                    <span className="btn-cv__icon" aria-hidden="true">↓</span>
+                    <Link href="/cv kerolos-eid-159.pdf" className="btn-cv">
+                        <span>Download CV</span>
+                        <span className="btn-cv__icon" aria-hidden="true">↓</span>
                     </Link>
                 </div>
             </div>

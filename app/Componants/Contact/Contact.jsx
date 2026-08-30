@@ -17,7 +17,7 @@ export default function Contact() {
                 <a href="https://wa.me/201270233635"><div><p>WhatsApp</p><p>WhatsApp</p></div></a>
                 <a href="https://www.linkedin.com/in/kerolos-eid-70aa08388"><div><p>LinkedIn</p><p>LinkedIn</p></div></a>
                 <a href="https://github.com/keto178"><div><p>GitHub</p><p>GitHub</p></div></a>
-                <Link href="/cv-kerolos-eid-159.pdf" className='btn-cv'>Download CV</Link>
+                <Link href="/cv kerolos-eid-159.pdf" className='btn-cv'>Download CV</Link>
             </div>
             <div className="item2 availability-card">
                 <p className="availability-label">AVAILABILITY</p>

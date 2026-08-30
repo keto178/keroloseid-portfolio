@@ -22,7 +22,6 @@
 .continer {
     width: 90%;
     margin: 0 auto;
-    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,12 +57,19 @@
     font-size: 1.2rem;
     color: var(--color-nav-muted);
 }
+
+.nav-link a {
+    color: var(--color-nav-muted);
+    transition: color 180ms ease, transform 180ms ease;
+}
+
 .nav-link a:hover {
     color: var(--color-text-white);
     font-weight: 600;
-
+    transform: translateY(-1px);
 }
-.btn-cv{
+
+.btn-cv {
     position: relative;
     top: -15px;
     display: inline-flex;
@@ -73,7 +79,7 @@
     min-width: 154px;
     padding: 13px 20px;
     border: 1px solid var(--color-border-nav);
-    border-radius: 8px;
+    border-radius: 999px;
     background: var(--color-page-background);
     box-shadow: none;
     color: var(--color-text-light);
@@ -105,37 +111,62 @@
 @media (max-width: 780px) {
     .continer {
         width: 90%;
-        padding: 16px;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 12px;
+        padding: 18px 16px 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
     }
 
     .continer .name {
-        flex: 1 1 auto;
-    }
-
-    .Btn {
-        margin-left: auto;
-    }
-
-    .nav-link {
-        order: 3;
-        flex: 0 0 100%;
-        justify-content: center;
-        padding-top: 4px;
-        gap: 16px;
-        flex-wrap: wrap;
+        width: 100%;
+        flex: 0 0 auto;
     }
 
     .site-navbar .name h3 {
         padding: 0;
-        font-size: 1.45rem;
+        font-size: 1.9rem;
+        line-height: 1;
+        white-space: normal;
+    }
+
+    .nav-link {
+        order: 2;
+        width: 100%;
+        justify-content: flex-start;
+        padding-top: 0;
+        gap: 10px 12px;
+        font-size: 1rem;
+    }
+
+    .nav-link a {
+        padding: 0.5rem 0.8rem;
+        border: 1px solid rgba(255, 255, 255, 0.13);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.03);
+        color: var(--color-nav-muted);
+    }
+
+    .Btn {
+        width: 100%;
+        margin: 0;
     }
 
     .btn-cv {
         position: static;
-        min-width: auto;
-        padding: 11px 15px;
+        width: 100%;
+        min-width: 100%;
+        min-height: 3.2rem;
+        padding: 0.9rem 1rem;
+        border-radius: 999px;
+        background: var(--color-text-primary);
+        border-color: var(--color-text-primary);
+        color: var(--color-button-dark);
+        box-shadow: none;
+    }
+
+    .btn-cv:hover {
+        background: var(--color-accent-soft);
+        border-color: var(--color-button-hover);
+        transform: none;
     }
 }
