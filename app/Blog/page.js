@@ -6,7 +6,7 @@ export default function Blog() {
     <div className='continar'>
         <div className="item1">
             <p>Blog</p>
-            <h2> blog</h2>
+            <h2>Blog</h2>
         </div>
         <div className="item3">
             {Blogs.map((Blog,index)=>(

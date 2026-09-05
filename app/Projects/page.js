@@ -34,8 +34,8 @@ export default function Projects() {
                                 {project.tech.map((item) => <span key={item}>{item}</span>)}
                             </div>
                             <div className='buttons'>
-                            <a href={project.demo}>Live Dimo</a>
-                            <a href={project.github}>Github</a>
+                            <a href={project.demo} target="_blank" rel="noreferrer">Live Demo</a>
+                            <a href={project.github} target="_blank" rel="noreferrer">GitHub</a>
                             </div>
                             </div>
                         </article>

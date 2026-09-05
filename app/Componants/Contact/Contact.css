@@ -82,11 +82,7 @@
     display: none;
 }
 
-.continar-contact .item1 a {
-    display: block;
-}
-
-.continar-contact .item1 a > div {
+.continar-contact .item1 a.contact-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -99,16 +95,12 @@
     transition: background-color 160ms ease, border-color 160ms ease;
 }
 
-.continar-contact .item1 a:hover > div {
+.continar-contact .item1 a.contact-row:hover {
     background: rgba(130, 173, 186, 0.12);
     border-color: rgba(191, 213, 224, 0.3);
 }
 
-.continar-contact .item1 a p {
-    margin: 0;
-}
-
-.continar-contact .item1 a p:first-child {
+.continar-contact .item1 a.contact-row .contact-label {
     color: var(--color-text-muted);
     font-size: 12px;
     font-weight: 600;
@@ -116,7 +108,7 @@
     text-transform: uppercase;
 }
 
-.continar-contact .item1 a p:last-child {
+.continar-contact .item1 a.contact-row .contact-value {
     color: var(--color-text-primary);
     font-size: 14px;
     font-weight: 700;
@@ -143,6 +135,13 @@
     color: var(--color-text-primary);
     background: transparent;
     border: 1px solid rgba(191, 213, 224, 0.3);
+    transition: background-color 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+.btn-cv:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(191, 213, 224, 0.5);
+    transform: translateY(-2px);
 }
 
 .availability-card h3 {
@@ -181,6 +180,12 @@
     background: #59e3c0;
     border-radius: 50%;
     transform: translateY(-50%);
+    animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(89, 227, 192, 0.5); }
+    50% { box-shadow: 0 0 0 6px rgba(89, 227, 192, 0); }
 }
 
 .availability-cta {
@@ -232,16 +237,15 @@
         font-size: 31px;
     }
 
-    .continar-contact .item1 a > div,
+    .continar-contact .item1 a.contact-row,
     .availability-actions {
         align-items: flex-start;
         flex-direction: column;
     }
 
-    .continar-contact .item1 a > div {
+    .continar-contact .item1 a.contact-row {
         gap: 7px;
         justify-content: center;
         padding: 12px 14px;
     }
-
 }

@@ -52,10 +52,12 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
     >
-      <SmoothScroll/>
-      <Navbar />
-      <body className="min-h-full flex flex-col">{children}</body>
-      <Footar/>
+      <body className="min-h-full flex flex-col">
+        <SmoothScroll/>
+        <Navbar />
+        {children}
+        <Footar/>
+      </body>
     </html>
   );
 }
